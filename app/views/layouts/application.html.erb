@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 	<p class="flash">
 		<%= flash.notice %>
@@ -24,6 +25,16 @@
 			</h6>
 		</div>
 	</div>
+	<div id="footer">
+	<ul>
+		<span style="float">
+			<%= link_to "Articles", articles_path %>
+			<%= link_to "Tags", tags_path %>
+			<%= link_to "Authors", authors_path %>
+			<%= link_to "New Author", new_author_path %>
+		</span>
+	</ul>
+</div>
 
 </body>
 </html>
